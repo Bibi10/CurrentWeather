@@ -28,7 +28,7 @@ class ViewController: UIViewController {
                     
                     let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
                     
-                    let websiteArray = webContent!.componentsSeparatedByString("Prévisions Météo Pour Paris 1 &ndash; 3 Jours</b><span class=\"read-more-small\"><span class=\"read-more-content\"> <span class=\"phrase\">")
+                    let websiteArray = webContent!.componentsSeparatedByString("3 Jours</b><span class=\"read-more-small\"><span class=\"read-more-content\"> <span class=\"phrase\">")
                     
                     // print(webSiteArray![1])
                     

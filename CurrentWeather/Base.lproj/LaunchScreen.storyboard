@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +15,48 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Current Weather App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDf-9s-QPV">
+                                <rect key="frame" x="79" y="160" width="163" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HnH-nc-7qr"/>
+                                    <constraint firstAttribute="width" constant="163" id="b0l-8O-CnN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="weather.png" translatesAutoresizingMaskIntoConstraints="NO" id="L6H-A3-6SJ">
+                                <rect key="frame" x="69" y="189" width="182" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="190" id="86h-ih-hsW"/>
+                                    <constraint firstAttribute="width" constant="182" id="EOe-V6-E1l"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pDf-9s-QPV" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="59" id="1Ua-9U-fAL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pDf-9s-QPV" secondAttribute="trailing" constant="58" id="KjI-Pm-n6k"/>
+                            <constraint firstItem="L6H-A3-6SJ" firstAttribute="top" secondItem="pDf-9s-QPV" secondAttribute="bottom" constant="8" id="MWx-ui-4rU"/>
+                            <constraint firstItem="pDf-9s-QPV" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="140" id="NXR-ym-bLi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L6H-A3-6SJ" secondAttribute="trailing" constant="49" id="SjQ-bP-JiM"/>
+                            <constraint firstItem="L6H-A3-6SJ" firstAttribute="top" secondItem="pDf-9s-QPV" secondAttribute="bottom" constant="8" id="VxU-kq-WTD"/>
+                            <constraint firstItem="L6H-A3-6SJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="49" id="dJ1-1I-b40"/>
+                            <constraint firstItem="pDf-9s-QPV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rIN-nX-6YA"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="L6H-A3-6SJ" secondAttribute="bottom" constant="189" id="rmY-RS-7XW"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="256" y="345"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="weather.png" width="300" height="300"/>
+    </resources>
 </document>

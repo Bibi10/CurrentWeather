@@ -15,6 +15,7 @@
 		71991F5C1C86EE0B00D9C9B5 /* CurrentWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71991F5B1C86EE0B00D9C9B5 /* CurrentWeatherTests.swift */; };
 		71991F671C86EE0B00D9C9B5 /* CurrentWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71991F661C86EE0B00D9C9B5 /* CurrentWeatherUITests.swift */; };
 		71991F751C86F37C00D9C9B5 /* nature1.png in Resources */ = {isa = PBXBuildFile; fileRef = 71991F741C86F37C00D9C9B5 /* nature1.png */; };
+		71991F771C871E5F00D9C9B5 /* weather.png in Resources */ = {isa = PBXBuildFile; fileRef = 71991F761C871E5F00D9C9B5 /* weather.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		71991F661C86EE0B00D9C9B5 /* CurrentWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherUITests.swift; sourceTree = "<group>"; };
 		71991F681C86EE0B00D9C9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71991F741C86F37C00D9C9B5 /* nature1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nature1.png; path = ../../../../../Downloads/nature1.png; sourceTree = "<group>"; };
+		71991F761C871E5F00D9C9B5 /* weather.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = weather.png; path = ../../../../../Downloads/weather.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +101,10 @@
 		71991F451C86EE0900D9C9B5 /* CurrentWeather */ = {
 			isa = PBXGroup;
 			children = (
+				71991F781C871FE100D9C9B5 /* images */,
 				71991F461C86EE0900D9C9B5 /* AppDelegate.swift */,
 				71991F481C86EE0900D9C9B5 /* ViewController.swift */,
 				71991F4A1C86EE0900D9C9B5 /* Main.storyboard */,
-				71991F741C86F37C00D9C9B5 /* nature1.png */,
 				71991F4D1C86EE0900D9C9B5 /* Assets.xcassets */,
 				71991F4F1C86EE0900D9C9B5 /* LaunchScreen.storyboard */,
 				71991F521C86EE0900D9C9B5 /* Info.plist */,
@@ -126,6 +128,15 @@
 				71991F681C86EE0B00D9C9B5 /* Info.plist */,
 			);
 			path = CurrentWeatherUITests;
+			sourceTree = "<group>";
+		};
+		71991F781C871FE100D9C9B5 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				71991F741C86F37C00D9C9B5 /* nature1.png */,
+				71991F761C871E5F00D9C9B5 /* weather.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71991F771C871E5F00D9C9B5 /* weather.png in Resources */,
 				71991F511C86EE0900D9C9B5 /* LaunchScreen.storyboard in Resources */,
 				71991F4E1C86EE0900D9C9B5 /* Assets.xcassets in Resources */,
 				71991F751C86F37C00D9C9B5 /* nature1.png in Resources */,
